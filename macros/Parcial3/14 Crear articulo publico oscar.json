@@ -1,0 +1,60 @@
+{
+  "Name": "14 Crear articulo publico oscar",
+  "CreationDate": "2021-10-20",
+  "Commands": [
+    {
+      "Command": "open",
+      "Target": "http://localhost/parcial2/inicio.php",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "linkText=Ver articulos",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "xpath=/html/body/div/ul/li[3]/a/span[2]",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtMensaje",
+      "Value": "Mi primer articulo",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=chkPublico",
+      "Value": "on",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=chkPublico",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "name=btnCrear",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "3000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "xpath=/html/body/div/ul/li[2]/a/span[2]",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

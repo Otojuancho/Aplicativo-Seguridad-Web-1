@@ -1,0 +1,114 @@
+{
+  "Name": "02 Registro-2",
+  "CreationDate": "2021-10-20",
+  "Commands": [
+    {
+      "Command": "open",
+      "Target": "http://localhost/parcial2/index.php",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "name=btnRegistrar",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "storeValue",
+      "Target": "id=captcha",
+      "Value": "captcha",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "${captcha}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtNombre",
+      "Value": "Oscar Alejandro",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtApellidos",
+      "Value": "Rodriguez Ardila",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtCorreo",
+      "Value": "oscar123@hotmail.com",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtDir",
+      "Value": "Cerca de piedra",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtNumHij",
+      "Value": "0",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtEstCivil",
+      "Value": "Soltero",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=fulFoto",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "C:\\Users\\juan\\Desktop\\Juan\\Imagenes\\gato.jpg",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_ENTER}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtUsuario",
+      "Value": "oscar",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtClave",
+      "Value": "1234",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtCapcha",
+      "Value": "${captcha}",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "name=btnRegistrar",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "",
+      "Target": "",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

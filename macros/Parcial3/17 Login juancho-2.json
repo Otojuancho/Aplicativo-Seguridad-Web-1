@@ -1,0 +1,48 @@
+{
+  "Name": "17 Login juancho-2",
+  "CreationDate": "2021-10-20",
+  "Commands": [
+    {
+      "Command": "open",
+      "Target": "http://localhost/parcial2/index.php",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "storeValue",
+      "Target": "id=captcha",
+      "Value": "captcha",
+      "Description": ""
+    },
+    {
+      "Command": "echo",
+      "Target": "${captcha}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtUsuario",
+      "Value": "juancho",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtClave",
+      "Value": "1234",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtCapcha",
+      "Value": "${captcha}",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "name=btnIngresar",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

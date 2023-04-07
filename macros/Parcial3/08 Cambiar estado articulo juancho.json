@@ -1,0 +1,78 @@
+{
+  "Name": "08 Cambiar estado articulo juancho",
+  "CreationDate": "2021-10-20",
+  "Commands": [
+    {
+      "Command": "open",
+      "Target": "http://localhost/parcial2/articulos.php",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "3000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "xpath=/html/body/div/ul/li[2]/a/span[2]",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "3000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "name=btnPublicar_1",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "3000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "xpath=/html/body/div/ul/li[2]/a/span[2]",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "3000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "name=btnDespublicar_1",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "3000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "xpath=/html/body/div/ul/li[2]/a/span[2]",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "xpath=//*[@id=\"tab2\"]/form[2]/input[4]",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

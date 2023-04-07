@@ -1,0 +1,48 @@
+{
+  "Name": "04 Actualizar clave juancho",
+  "CreationDate": "2021-10-20",
+  "Commands": [
+    {
+      "Command": "open",
+      "Target": "http://localhost/parcial2/inicio.php",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "linkText=Mi perfil",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "name=btnCambio",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtAnterior",
+      "Value": "123",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtNueva",
+      "Value": "1234",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtRepetir",
+      "Value": "1234",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "name=btnActualizar",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

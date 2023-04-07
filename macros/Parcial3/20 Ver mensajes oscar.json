@@ -1,0 +1,24 @@
+{
+  "Name": "20 Ver mensajes oscar",
+  "CreationDate": "2021-10-20",
+  "Commands": [
+    {
+      "Command": "click",
+      "Target": "linkText=Ver mensajes",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "3000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "name=btnsalir",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

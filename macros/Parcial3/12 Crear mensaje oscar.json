@@ -1,0 +1,72 @@
+{
+  "Name": "12 Crear mensaje oscar",
+  "CreationDate": "2021-10-20",
+  "Commands": [
+    {
+      "Command": "clickAndWait",
+      "Target": "linkText=Ver mensajes",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "xpath=/html/body/div/ul/li[3]/a/span[2]",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=cmbDestino",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "select",
+      "Target": "id=cmbDestino",
+      "Value": "label=Juan Diego Sotelo Romero",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtMensaje",
+      "Value": "Hola Juancho",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "2000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "click",
+      "Target": "id=fulAdjunto",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "C:\\Users\\juan\\Desktop\\Juan\\Imagenes\\guitarra_fuego.jpg",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "XType",
+      "Target": "${KEY_ENTER}",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "name=btnEnviar",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "xpath=/html/body/div/ul/li[2]/a/span[2]",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

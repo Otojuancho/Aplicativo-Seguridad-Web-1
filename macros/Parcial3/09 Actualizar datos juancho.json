@@ -1,0 +1,54 @@
+{
+  "Name": "09 Actualizar datos juancho",
+  "CreationDate": "2021-10-20",
+  "Commands": [
+    {
+      "Command": "open",
+      "Target": "http://localhost/parcial2/inicio.php",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "linkText=Mi perfil",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtDir",
+      "Value": "Ivaro",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtNumHij",
+      "Value": "1",
+      "Description": ""
+    },
+    {
+      "Command": "type",
+      "Target": "id=txtEstCivil",
+      "Value": "Comprometido",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "name=btnActualizar",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "pause",
+      "Target": "3000",
+      "Value": "",
+      "Description": ""
+    },
+    {
+      "Command": "clickAndWait",
+      "Target": "name=btnsalir",
+      "Value": "",
+      "Description": ""
+    }
+  ]
+}

@@ -1,0 +1,676 @@
+{
+	"info": {
+		"_postman_id": "02cea294-4a9d-4aac-8456-fbacacde144e",
+		"name": "parcial3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "txtUsuario",
+							"value": "johan",
+							"type": "text"
+						},
+						{
+							"key": "txtClave",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "txtNombre",
+							"value": "Johan",
+							"type": "text"
+						},
+						{
+							"key": "txtApellidos",
+							"value": "Rodriguez Ardila",
+							"type": "text"
+						},
+						{
+							"key": "txtCorreo",
+							"value": "johan@ardila.com",
+							"type": "text"
+						},
+						{
+							"key": "txtDir",
+							"value": "Cerca de piedra",
+							"type": "text"
+						},
+						{
+							"key": "txtNumHij",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "txtEstCivil",
+							"value": "Soltero",
+							"type": "text"
+						},
+						{
+							"key": "fulFoto",
+							"type": "file",
+							"src": "/C:/Users/otoju/Pictures/guitarra_fuego.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/parcial3/api/Usuarios.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcial3",
+						"api",
+						"Usuarios.php"
+					]
+				},
+				"description": "http://localhost/parcial3/api/Usuarios.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "usuario",
+							"value": "johan",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/parcial3/api/auth.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcial3",
+						"api",
+						"auth.php"
+					]
+				},
+				"description": "http://localhost/parcial3/api/auth.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Verificar login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzY2NjQ2NTUsImV4cCI6MTYzNjY2ODI1NSwiZGF0YSI6eyJ1c3VhcmlvIjoiam9oYW4ifX0.G8R3_GQ2Hg5OZSNn8RtZ23KmEG7mfR-0ZNDu6hIcoWw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/parcial3/api/auth.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcial3",
+						"api",
+						"auth.php"
+					]
+				},
+				"description": "http://localhost/parcial3/api/auth.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Ver perfil",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzY2NjQ2NTUsImV4cCI6MTYzNjY2ODI1NSwiZGF0YSI6eyJ1c3VhcmlvIjoiam9oYW4ifX0.G8R3_GQ2Hg5OZSNn8RtZ23KmEG7mfR-0ZNDu6hIcoWw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/parcial3/api/Usuarios.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcial3",
+						"api",
+						"Usuarios.php"
+					]
+				},
+				"description": "http://localhost/parcial3/api/Usuarios.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar datos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzY2NjQ2NTUsImV4cCI6MTYzNjY2ODI1NSwiZGF0YSI6eyJ1c3VhcmlvIjoiam9oYW4ifX0.G8R3_GQ2Hg5OZSNn8RtZ23KmEG7mfR-0ZNDu6hIcoWw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/parcial3/api/Usuarios.php?txtNombre=Johan&txtApellidos=Rodriguez Ardila&txtCorreo=johan@ardila.com&txtDir=Cerca de piedra&txtNumHij=0&txtEstCivil=Comprometido",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcial3",
+						"api",
+						"Usuarios.php"
+					],
+					"query": [
+						{
+							"key": "txtNombre",
+							"value": "Johan"
+						},
+						{
+							"key": "txtApellidos",
+							"value": "Rodriguez Ardila"
+						},
+						{
+							"key": "txtCorreo",
+							"value": "johan@ardila.com"
+						},
+						{
+							"key": "txtDir",
+							"value": "Cerca de piedra"
+						},
+						{
+							"key": "txtNumHij",
+							"value": "0"
+						},
+						{
+							"key": "txtEstCivil",
+							"value": "Comprometido"
+						}
+					]
+				},
+				"description": "http://localhost/parcial3/api/Usuarios.php?txtNombre=Johan&txtApellidos=Rodriguez Ardila&txtCorreo=johan@ardila.com&txtDir=Cerca de piedra&txtNumHij=0&txtEstCivil=Comprometido"
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar clave",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzY2NjQ2NTUsImV4cCI6MTYzNjY2ODI1NSwiZGF0YSI6eyJ1c3VhcmlvIjoiam9oYW4ifX0.G8R3_GQ2Hg5OZSNn8RtZ23KmEG7mfR-0ZNDu6hIcoWw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/parcial3/api/Usuarios.php?txtNueva=1234&txtRepetir=1234&txtAnterior=12345",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcial3",
+						"api",
+						"Usuarios.php"
+					],
+					"query": [
+						{
+							"key": "txtNueva",
+							"value": "1234"
+						},
+						{
+							"key": "txtRepetir",
+							"value": "1234"
+						},
+						{
+							"key": "txtAnterior",
+							"value": "12345"
+						}
+					]
+				},
+				"description": "http://localhost/parcial3/api/Usuarios.php?txtNueva=1234&txtRepetir=1234&txtAnterior=12345"
+			},
+			"response": []
+		},
+		{
+			"name": "Enviar mensaje",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzY2NjQ2NTUsImV4cCI6MTYzNjY2ODI1NSwiZGF0YSI6eyJ1c3VhcmlvIjoiam9oYW4ifX0.G8R3_GQ2Hg5OZSNn8RtZ23KmEG7mfR-0ZNDu6hIcoWw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "txtMensaje",
+							"value": "Hola Juancho",
+							"type": "text"
+						},
+						{
+							"key": "fulAdjunto",
+							"type": "file",
+							"src": "/C:/Users/otoju/Pictures/guitarra_fuego.jpg"
+						},
+						{
+							"key": "cmbDestino",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/parcial3/api/Mensajes.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcial3",
+						"api",
+						"Mensajes.php"
+					]
+				},
+				"description": "http://localhost/parcial3/api/Mensajes.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Articulo publico",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzY2NjQ2NTUsImV4cCI6MTYzNjY2ODI1NSwiZGF0YSI6eyJ1c3VhcmlvIjoiam9oYW4ifX0.G8R3_GQ2Hg5OZSNn8RtZ23KmEG7mfR-0ZNDu6hIcoWw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "txtMensaje",
+							"value": "Mi primer articulo",
+							"type": "text"
+						},
+						{
+							"key": "chkPublico",
+							"value": "on",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/parcial3/api/Articulos.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcial3",
+						"api",
+						"Articulos.php"
+					]
+				},
+				"description": "http://localhost/parcial3/api/Articulos.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Articulo no publico",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzY2NjQ2NTUsImV4cCI6MTYzNjY2ODI1NSwiZGF0YSI6eyJ1c3VhcmlvIjoiam9oYW4ifX0.G8R3_GQ2Hg5OZSNn8RtZ23KmEG7mfR-0ZNDu6hIcoWw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "txtMensaje",
+							"value": "Mi segundo articulo",
+							"type": "text"
+						},
+						{
+							"key": "chkPublico",
+							"value": "off",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/parcial3/api/Articulos.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcial3",
+						"api",
+						"Articulos.php"
+					]
+				},
+				"description": "http://localhost/parcial3/api/Articulos.php"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar articulos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzY2NjQ2NTUsImV4cCI6MTYzNjY2ODI1NSwiZGF0YSI6eyJ1c3VhcmlvIjoiam9oYW4ifX0.G8R3_GQ2Hg5OZSNn8RtZ23KmEG7mfR-0ZNDu6hIcoWw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/parcial3/api/Articulos.php?mis_articulos=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcial3",
+						"api",
+						"Articulos.php"
+					],
+					"query": [
+						{
+							"key": "mis_articulos",
+							"value": "1"
+						}
+					]
+				},
+				"description": "http://localhost/parcial3/api/Articulos.php?mis_articulos=1"
+			},
+			"response": []
+		},
+		{
+			"name": "Poner articulo publico",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzY2NjQ2NTUsImV4cCI6MTYzNjY2ODI1NSwiZGF0YSI6eyJ1c3VhcmlvIjoiam9oYW4ifX0.G8R3_GQ2Hg5OZSNn8RtZ23KmEG7mfR-0ZNDu6hIcoWw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/parcial3/api/Articulos.php?btnPublicar_1=Publicar&txtid=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcial3",
+						"api",
+						"Articulos.php"
+					],
+					"query": [
+						{
+							"key": "btnPublicar_1",
+							"value": "Publicar"
+						},
+						{
+							"key": "txtid",
+							"value": "6"
+						}
+					]
+				},
+				"description": "http://localhost/parcial3/api/Articulos.php?btnPublicar_1=Publicar&txtid=6"
+			},
+			"response": []
+		},
+		{
+			"name": "Poner articulo no publico",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzY2NjQ2NTUsImV4cCI6MTYzNjY2ODI1NSwiZGF0YSI6eyJ1c3VhcmlvIjoiam9oYW4ifX0.G8R3_GQ2Hg5OZSNn8RtZ23KmEG7mfR-0ZNDu6hIcoWw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/parcial3/api/Articulos.php?btnDespublicar_1=Despublicar&txtid=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcial3",
+						"api",
+						"Articulos.php"
+					],
+					"query": [
+						{
+							"key": "btnDespublicar_1",
+							"value": "Despublicar"
+						},
+						{
+							"key": "txtid",
+							"value": "6"
+						}
+					]
+				},
+				"description": "http://localhost/parcial3/api/Articulos.php?btnDespublicar_1=Despublicar&txtid=6"
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar articulo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzY2NjQ2NTUsImV4cCI6MTYzNjY2ODI1NSwiZGF0YSI6eyJ1c3VhcmlvIjoiam9oYW4ifX0.G8R3_GQ2Hg5OZSNn8RtZ23KmEG7mfR-0ZNDu6hIcoWw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/parcial3/api/Articulos.php?btnBorrar_1=Borrar&txtid=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcial3",
+						"api",
+						"Articulos.php"
+					],
+					"query": [
+						{
+							"key": "btnBorrar_1",
+							"value": "Borrar"
+						},
+						{
+							"key": "txtid",
+							"value": "7"
+						}
+					]
+				},
+				"description": "http://localhost/parcial3/api/Articulos.php?btnBorrar_1=Borrar&txtid=7"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar mensajes enviados",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzY2NjQ2NTUsImV4cCI6MTYzNjY2ODI1NSwiZGF0YSI6eyJ1c3VhcmlvIjoiam9oYW4ifX0.G8R3_GQ2Hg5OZSNn8RtZ23KmEG7mfR-0ZNDu6hIcoWw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/parcial3/api/Mensajes.php?msje=ok",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcial3",
+						"api",
+						"Mensajes.php"
+					],
+					"query": [
+						{
+							"key": "msje",
+							"value": "ok"
+						}
+					]
+				},
+				"description": "http://localhost/parcial3/api/Mensajes.php?msje=ok"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar mensajes recibidos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzY2NjQ2NTUsImV4cCI6MTYzNjY2ODI1NSwiZGF0YSI6eyJ1c3VhcmlvIjoiam9oYW4ifX0.G8R3_GQ2Hg5OZSNn8RtZ23KmEG7mfR-0ZNDu6hIcoWw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/parcial3/api/Mensajes.php?msjr=ok",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"parcial3",
+						"api",
+						"Mensajes.php"
+					],
+					"query": [
+						{
+							"key": "msjr",
+							"value": "ok"
+						}
+					]
+				},
+				"description": "http://localhost/parcial3/api/Mensajes.php?msjr=ok"
+			},
+			"response": []
+		}
+	]
+}
